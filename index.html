@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How ContextLite handles selected PDF documents, local Markdown conversion, exported files, and privacy enquiries.">
+  <meta name="theme-color" content="#163d30">
+  <title>Privacy Policy — ContextLite</title>
+  <style>
+    :root{color-scheme:light;--ink:#173b2e;--muted:#53665a;--paper:#f8faf6;--green:#315e4c;--line:#dce5dc}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.75 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:var(--green);text-underline-offset:4px;overflow-wrap:anywhere}a:hover{text-decoration-thickness:2px}a:focus-visible{outline:3px solid #467d64;outline-offset:5px;border-radius:2px}
+    .skip{position:absolute;top:-80px;left:20px;padding:8px 16px;background:white;z-index:2}.skip:focus{top:12px}
+    header{background:#163d30;color:#f8faf6;padding:44px 24px 52px}.wrap{max-width:800px;margin:auto}.brand{display:flex;align-items:center;gap:12px;font-size:20px;font-weight:700;letter-spacing:-.4px}
+    .mark{display:grid;place-items:center;width:40px;height:44px;background:#a1d4b9;color:#163d30;border-radius:9px;font-size:23px}
+    h1{font-size:clamp(36px,7vw,56px);line-height:1.12;letter-spacing:-2px;margin:36px 0 18px}header p{max-width:610px;color:#d4e5d9;margin:0}.date{font-size:14px;margin-top:24px;color:#b8d4c1}
+    main{padding:36px 24px 64px}.summary{border:1px solid #cbdccf;background:#eaf1e9;border-radius:16px;padding:24px 28px;margin-bottom:34px}.summary strong{font-size:21px}.summary p{margin:8px 0 0}
+    nav{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:36px}nav p{margin:0 0 8px;font-weight:650}nav ul{display:flex;flex-wrap:wrap;gap:8px 24px;list-style:none;padding:0;margin:0;font-size:15px}
+    section{margin:32px 0}h2{font-size:24px;line-height:1.35;letter-spacing:-.5px;margin:0 0 12px}p{margin:12px 0}li{margin:8px 0}ul{padding-left:24px}.contact{padding:24px 28px;background:white;border:1px solid var(--line);border-radius:16px}.contact p{margin:8px 0}footer{border-top:1px solid var(--line);padding:24px;color:var(--muted);font-size:14px}
+    @media(max-width:480px){body{font-size:16px}header{padding:28px 20px 36px}main{padding:24px 20px 44px}.summary,.contact{padding:20px}h1{letter-spacing:-1.3px}h2{font-size:22px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{header{background:white;color:#173b2e;padding:0}header p,.date{color:#53665a}nav,.skip{display:none}main{padding:20px 0}section{break-inside:avoid}footer{padding:12px 0}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#policy">Skip to privacy policy</a>
+  <header><div class="wrap">
+    <div class="brand"><span class="mark" aria-hidden="true">≡</span>ContextLite</div>
+    <h1>Privacy Policy</h1>
+    <p>How your documents are processed, where results are stored, and the choices you control.</p>
+    <p class="date">Effective date: 11 October 2026</p>
+  </div></header>
+  <main id="policy" class="wrap">
+    <aside class="summary" aria-label="Privacy overview">
+      <strong>Your documents are processed on your device.</strong>
+      <p>ContextLite converts selected PDFs into Markdown locally. It does not upload your documents to the developer or an AI service. Saving, copying, and sharing happen when you choose those actions.</p>
+    </aside>
+    <nav aria-label="Policy sections"><p>On this page</p><ul>
+      <li><a href="#documents">Documents</a></li><li><a href="#storage">Storage &amp; deletion</a></li><li><a href="#sharing">Export &amp; sharing</a></li><li><a href="#testing">Support &amp; testing</a></li><li><a href="#contact">Contact</a></li>
+    </ul></nav>
+    <section><h2>1. About this policy</h2>
+      <p>This policy covers the ContextLite Android application (package name <span>dev.contextlite</span>), provided by <strong>Adi Rahman</strong>, and this privacy policy website.</p>
+      <p>ContextLite prepares text-based PDFs for use in other workflows by converting their contents into Markdown. It does not require an account and does not connect to an AI model or use your documents to train one.</p>
+    </section>
+    <section id="documents"><h2>2. Documents and information the app accesses</h2>
+      <p>When you select PDFs through Android’s document picker, ContextLite reads the selected documents and their filenames. It processes document text, page counts, file sizes, and document references to produce Markdown, identify sources, estimate token counts, and show conversion progress or errors.</p>
+      <p>Document contents may include personal information that you choose to process. This information is handled locally for the conversion you request. ContextLite does not scan your entire device or request broad access to all files.</p>
+      <p>The app may retain Android’s read permission for selected documents so a conversion can continue in the background or resume after an interruption. Permissions for documents no longer needed are released as selections and conversion batches change.</p>
+    </section>
+    <section id="storage"><h2>3. Local storage, retention, and deletion</h2>
+      <ul>
+        <li><strong>Latest conversion:</strong> the app stores its most recent conversion state in private app storage, including document references and filenames, extracted Markdown, progress, metrics, and errors. This allows results to remain available after reopening the app. Starting a new conversion replaces the previous saved conversion state.</li>
+        <li><strong>Recovery and preferences:</strong> local work records and notification preferences support background processing. An unreadable conversion checkpoint may be retained locally for recovery diagnosis until app data is cleared.</li>
+        <li><strong>Temporary files:</strong> PDF processing may use the app’s cache. Sharing creates a cached Markdown copy. Share copies older than seven days are removed the next time you use Share; this is not a scheduled seven-day deletion. Android may also remove cached files.</li>
+      </ul>
+      <p>To remove ContextLite’s internal data and retained document permissions, clear the app’s storage in Android settings or uninstall the app. Clearing only the cache does not remove the saved conversion state. Cancelling a conversion or removing a document from the selection is not a request to erase all previously stored results.</p>
+      <p>Original PDFs and files you export outside the app remain in their chosen locations. Delete those separately through your file manager or storage provider. Copies already received by another app or person are outside ContextLite’s control.</p>
+      <p>The app is configured to exclude its private data from Android cloud backup and device transfer. Exported files may be backed up or synced by the storage provider you choose.</p>
+    </section>
+    <section id="sharing"><h2>4. Copying, saving, and sharing</h2>
+      <p><strong>Copy Markdown</strong> places the generated text on the Android clipboard. Clipboard access and retention depend on your Android version, device settings, and apps with permitted access.</p>
+      <p><strong>Save .md</strong> writes a Markdown file to the location you choose in Android’s file picker. <strong>Share .md</strong> makes a Markdown attachment available to the app you select through Android’s share sheet.</p>
+      <p>If you choose a cloud document provider, cloud save location, messaging app, or AI service, that provider may download, upload, store, or otherwise process the selected content under its own privacy policy. Such transfers are initiated by your choices; ContextLite does not automatically send documents to the developer or an AI provider.</p>
+    </section>
+    <section><h2>5. Permissions and security</h2>
+      <p>ContextLite uses Android’s document picker for access to selected files and may request notification permission to show conversion progress and completion. Background conversion uses Android’s foreground-service facilities.</p>
+      <p>The current app does not request Android’s Internet permission and does not include advertising, analytics, or developer-operated crash-reporting services. It does not collect location, contacts, advertising identifiers, camera recordings, or microphone recordings.</p>
+      <p>Internal conversion data is protected by Android’s app storage isolation. Shared files use temporary read access for the receiving app. The app does not add its own password protection or encryption to exported Markdown; protect your device and choose export destinations appropriate for the document’s contents.</p>
+    </section>
+    <section id="testing"><h2>6. Support and internal testing</h2>
+      <p>If you contact the developer, the developer receives the email address or profile details and message contents you voluntarily provide. These are used to respond to your enquiry and resolve the issue. Avoid sending private documents unless they are necessary for your request.</p>
+      <p>If you voluntarily provide your Google account email to join internal testing, it is used to manage testing access in Google Play Console and communicate about that testing. Google processes testing information under its own policies. This process is separate from document conversion inside the app.</p>
+      <p>Support correspondence is retained only as long as needed to resolve and follow up on the enquiry. Tester contact details are retained while needed to administer your participation. You can request removal from the developer’s tester list or deletion of support correspondence using the contact below, subject to any applicable legal retention requirements. Google’s own records remain subject to Google’s policies.</p>
+      <p>The developer does not sell your documents, support messages, or tester contact details, or use them for advertising.</p>
+    </section>
+    <section><h2>7. This website and external services</h2>
+      <p>This policy page has no advertising, analytics scripts, contact forms, or document uploads. It is hosted on GitHub Pages. GitHub records visitor IP addresses for security purposes and may process technical request information under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+      <p>Google Play distribution and any external services you choose are governed by their respective policies, including the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+    </section>
+    <section><h2>8. Changes to this policy</h2>
+      <p>This policy may be updated when ContextLite’s features or data practices change. The current version will be published on this page with an updated effective date. Material changes will be communicated in the app or through its release information, as appropriate.</p>
+    </section>
+    <section id="contact" class="contact"><h2>9. Contact</h2>
+      <p>For privacy questions, support-data deletion, or removal from internal testing, contact:</p>
+      <p><strong>Adi Rahman</strong><br><a href="mailto:digitalsurvivor9@gmail.com">digitalsurvivor9@gmail.com</a></p>
+      <p>Please mention “ContextLite privacy” so your enquiry can be identified.</p>
+    </section>
+  </main>
+  <footer><div class="wrap">ContextLite · Privacy Policy · Last updated 11 October 2026</div></footer>
+</body>
+</html>
